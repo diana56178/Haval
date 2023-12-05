@@ -1,0 +1,12 @@
+.logo {
+    display: block;
+}
+
+.logo__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoint-large) {
+        width: 307px;
+    }
+}

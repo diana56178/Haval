@@ -1,0 +1,35 @@
+.address {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+
+    @media (max-width: $breakpoint-small-down) {
+        flex-direction: column;
+    }
+}
+
+.address__phone {
+    padding: 5px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+
+    @media (max-width: $breakpoint-small-down) {
+        margin-bottom: 20px;
+    }
+}
+
+.address__text {
+    margin: 0;
+    padding: 5px;
+    padding-left: 30px;
+    font-size: 13px;
+    background-image: url("../img/location.svg");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}

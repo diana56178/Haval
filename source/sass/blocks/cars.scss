@@ -1,0 +1,24 @@
+.cars {
+    padding: 78px 0;
+}
+
+.cars__container {
+    @media (max-width: $breakpoint-small-down) {
+        
+    }
+
+    @media (min-width: $breakpoint-large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+}
+
+.cars__item {
+    @media (max-width: $breakpoint-small-down) {
+        & + & {
+            margin-top: 50px;
+        }
+    }
+}

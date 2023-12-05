@@ -1,0 +1,38 @@
+.timer {
+    padding: 50px 0 50px;
+    background-color: #F3F3F3;
+    color: #000000;
+}
+
+.timer__container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+
+    @media (min-width: $breakpoint-large) {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.timer__header {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.swiper__wrapper {
+    overflow: hidden;
+}
+
+.timer__button {
+    padding: 25px;
+    width: 100%;
+}
+
+.timer__grid {
+    grid-row: 1 / -1;
+}

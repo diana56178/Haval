@@ -1,0 +1,41 @@
+.menu__link {
+    display: block;
+    padding: 4px 7px;
+    color: #FFFFFF;
+    font-size: 11px;
+    text-decoration: none;
+
+    @media (max-width: $breakpoint-small-down) {
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 1px solid grey;
+    }
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.service-menu .menu__link {
+    text-transform: uppercase;
+}
+
+.menu__item--active {
+    @media (min-width: $breakpoint-large) {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            right: 7px;
+            left: 7px;
+            height: 2px;
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+.menu__item:hover .menu__link {
+    color: $color-button;
+}

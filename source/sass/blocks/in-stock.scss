@@ -1,0 +1,16 @@
+.in-stock {
+    display: inline-block;
+    min-height: 44px;
+    width: 190px;
+    padding: 7px 20px;
+    background-color: $color-button;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.in-stock__count {
+    color: #000000;
+    display: block;
+}

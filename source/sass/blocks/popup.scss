@@ -1,0 +1,31 @@
+.popup {
+    width: 280px;
+    text-align: center;
+    
+    @media (min-width: $breakpoint-large) {
+        width: 350px;
+    }
+}
+
+.popup__label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-button;
+    margin-bottom: 50px;
+}
+
+.popup__field {
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    border: 1px solid grey;
+}
+
+.popup__button {
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F3F3F3;
+        color: #000000;
+    }
+}

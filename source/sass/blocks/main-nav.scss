@@ -1,0 +1,98 @@
+.main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    @media (max-width: $breakpoint-small-down) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.main-nav__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    @media (max-width: $breakpoint-small-down) {
+        flex-direction: column;
+    }
+}
+
+.main-nav__toggler {
+    @media (max-width:$breakpoint-small-down) {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        width: 70px;
+        height: 40px;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+    
+        &:hover,
+        &:active {
+            opacity: 80%;
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        display: none;
+    }
+}
+
+.main-nav--closed .main-nav__toggler {
+    background-image: url("../img/burger.svg");
+}
+
+.main-nav--opened .main-nav__toggler {
+    background-image: url("../img/close.svg");
+}
+
+@media (max-width: $breakpoint-small-down) {
+    .main-nav--closed .menu__item {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}
+.main-nav--closed .menu__item--active a {
+    text-align: center;
+}
+
+.main-nav--nojs .main-nav__toggler {
+    display: none;
+}
+
+@media (max-width: $breakpoint-small-down) {
+    .main-nav--nojs .main-nav__wrapper {
+        position: static;
+        min-height: 0;
+    }
+
+    .main-nav--nojs .site-menu {
+        display: block;
+    }
+
+    .main-nav--nojs .site-menu__item--active a {
+        background-color: $color-button;
+        text-align: right;
+    }
+
+    .main-nav--opened .main-nav__wrapper {
+        position: absolute;
+        top: 60px;
+        right: 70px;
+        left: 0;
+        background-color: #000000;
+        z-index: 10;
+        height: 80vh;
+    }
+}

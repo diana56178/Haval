@@ -1,0 +1,42 @@
+.option__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.option__toggles {
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background-color: #00cabf !important;
+}
+
+.option__button:not(:last-child) {
+    margin-right: 16px;
+}
+
+.option__button--white {
+    background-color: #FFFFFF;
+}
+
+.option__button--grey {
+    background-color: grey;
+}
+
+.option__button--red {
+    background-color: red;
+}
+
+.option__button--current {
+    outline: solid grey 1px !important;
+    outline-offset: 3px !important;
+}
+
+.swiper-slide {
+    margin: inherit;
+}

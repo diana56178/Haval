@@ -1,0 +1,41 @@
+.page-header {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.page-header__wrapper {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: $breakpoint-small-down) {
+        width: 280px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        max-width: 1220px;
+    }
+}
+
+.page-header__nav {
+    @media (max-width: $breakpoint-small-down) {
+        // display: none;
+    }
+}
+
+.page-header__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+
+    @media (max-width: $breakpoint-small-down) {
+        flex-direction: column;
+    }
+}
+
+.page-header__address {
+    @media (min-width: $breakpoint-large) {
+        width: 50%;
+        justify-content: space-between;
+    }
+}

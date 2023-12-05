@@ -1,0 +1,54 @@
+.advantages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @media (min-width: $breakpoint-large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 13px;
+    }
+}
+
+.advantages__item {
+    &::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: $color-button;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    @media (max-width: $breakpoint-small-down) {
+        & + & {
+            margin-top: 13px;
+        }
+    }
+        display: grid;
+        grid-template-columns: 28px auto;
+        column-gap: 5px;
+        align-items: center;
+}
+
+.advantages__item--pricetag::before {
+    background-image: url("../img/ion_pricetags-outline.svg");
+}
+
+.advantages__item--shield::before {
+    background-image: url("../img/shield.svg");
+}
+
+.advantages__item--gift::before {
+    background-image: url("../img/gift.svg");
+}
+
+.advantages__item--wallet::before {
+    background-image: url("../img/wallet.svg");
+}
+
+.advantages__item--tires::before {
+    background-image: url("../img/tires.svg");
+}
