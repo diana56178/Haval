@@ -16,27 +16,6 @@
     background-color: #00cabf !important;
 }
 
-.option__button:not(:last-child) {
-    margin-right: 16px;
-}
-
-.option__button--white {
-    background-color: #FFFFFF;
-}
-
-.option__button--grey {
-    background-color: grey;
-}
-
-.option__button--red {
-    background-color: red;
-}
-
-.option__button--current {
-    outline: solid grey 1px !important;
-    outline-offset: 3px !important;
-}
-
 .swiper-slide {
     margin: inherit;
 }
